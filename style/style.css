@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&family=Orelega+One&family=PT+Serif:ital,wght@1,700&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,500&family=The+Nautigal:wght@700&display=swap');
+:root{
+    --contact-color: #f2726a;
+}
+/* reset css */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%; 
+    margin: 0;    
+    font-family: 'EB Garamond', serif;
+}
+[class*="col-"]{
+    width: 100%;
+}
+/* for navbar */
+ul.topnav{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-weight: bold;    
+    background-color: rgb(222, 229, 236);
+}
+ul.topnav li a{
+    color: black;
+    display: block;
+    padding: 15px;    
+    margin: 0px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: 0.3s;
+}
+ul.topnav li a.active {
+    background-color: rgb(119, 74, 74);
+    color: rgb(188, 236, 115);
+}
+ul.topnav li a:hover{
+    background-color: #333;
+    color: greenyellow;
+}
+
+
+/* for banner */
+#banner{
+    background-color:bisque;
+    clear: both;
+    position: relative;
+    width: 100%; 
+    overflow: hidden;     
+}
+#banner .banner_image{
+    width: 100%;
+    height: 40%;
+    visibility: hidden;
+    display: flex;
+    padding: 0;
+    animation-name: banner-ani;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;    
+}
+@keyframes banner-ani {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.2);
+    } 
+    100%{
+        transform: scale(1);
+    }   
+}
+#banner .banner_content{
+    position: absolute;       
+    display: block;
+    top: 10%;
+    left: 10px;
+    transition: 1s;
+    transition-delay: 0.3s;
+}#banner .banner_content:hover{
+    transform: scale(1.2) rotate(360deg) translate(50px,20px);    
+}
+
+/* for brief infor & gallery */
+
+.briefinfo ol{
+    margin-left: 25px;
+    font-size: 1.5em;
+} 
+.row {
+    margin: 0px auto;
+}
+#gallery{ 
+    margin: 0px auto;
+    padding: 25px;        
+}
+#gallery img{
+    padding: 25px 15px;
+    width: 100%;  
+    transition: 0.5s; 
+    transition-delay: 0.5; 
+}
+#gallery h2, p {
+    clear: both;
+}
+#gallery img:hover{
+    transform: scale(0.9);
+    cursor: pointer;
+}
+#gallery .gallery-col-1, .gallery-col-2, .gallery-col-3, .history-col-1, .history-col-2 {
+    float: left;    
+}
+hr{
+    display: none;    
+}
+/* for footer */
+
+#footer .footer-col-1, .footer-col-2, .footer-col-3{
+    display: block;
+    float: left;    
+    font-size: 1.2em;
+    padding: 25px;
+    overflow: hidden; 
+    background: rgb(240, 240, 240);   
+}
+#footer a{
+    padding: none;
+    color: royalblue;
+    text-decoration: none;
+}
+#footer a:hover{
+    color: chocolate;    
+}
+.backtop{
+    clear: both;
+    text-align: center; 
+    font-size: 1.5em;    
+}
+.backtop a:hover{
+    color: greenyellow;
+}
+[class*="col-"]{
+    width: 100%;
+}
+ 
+/* contact */
+.card{
+    position: relative;
+    width: 100%;
+    min-height: 600px;
+    max-height: 600px;
+    background: #242628;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 5px;    
+    padding: 0;
+}
+.card__img{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 5px solid var(--contact-color);
+    margin: auto;
+    overflow: hidden;    
+    transition: 0.5s;
+    transform: translateY(25px);
+}
+.card__img img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    object-position: center;    
+}
+.card__img:hover{
+    width: 100%;
+    height: 100%;
+    border-radius: unset;
+    border: unset;    
+    transform: unset;
+    overflow: visible;  
+}    
+.card h2, h3{
+    margin-top: 35px;
+    color: white;
+}
+.card p{
+    color: var(--contact-color);    
+}
+.card__social{
+    margin: 25px 0px;
+}
+.card__social a{
+    font-size: 1.3em;
+    margin: 10px 15px;
+    color: white;
+}
+.card__social a:hover{
+    color: var(--contact-color);
+}
+.card__button{
+    width: 100px;
+    height: 50px;
+    border-radius: 5px;
+    border: 2px solid var(--contact-color);
+    background: transparent;
+    color: white;
+    transition: 0.5s;
+    margin: auto;
+}
+.card__button:hover{
+    background: var(--contact-color);
+    transform: scale(1.2);
+}
+.card .quote{
+    margin: 10px 10px;
+    transition: 0.5s;
+}
+.card .quote:hover{
+    color:white;
+}
+.progress{
+    height: 35px;
+    font-size: 1em;
+}
+.education-list li{
+    font-size: 1em;
+}
+.table{
+    text-align: center;    
+}
+.table .selected{
+    background-color: var(--contact-color);
+}
+iframe{    
+    height: 350px;
+    width: 550px;
+    margin: 0;
+}
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px; height: 0; overflow: hidden;
+}
+.video-container iframe,
+.video-container object,
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.copyright {
+    font-size: 1em;
+    text-align: right;
+    padding-bottom: 10px;
+    color: grey;
+}
