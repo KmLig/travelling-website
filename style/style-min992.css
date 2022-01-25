@@ -38,5 +38,8 @@
     }    
     .nar-right li:first-child{
         margin-right: 30px;
+    }
+    .card{
+        margin: 10px;
     }   
 }

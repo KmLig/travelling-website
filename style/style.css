@@ -148,16 +148,16 @@ hr{
 }
  
 /* contact */
-.card{
+.card{    
     position: relative;
     width: 100%;
-    min-height: 600px;
-    max-height: 600px;
+    min-height: 610px;
+    max-height: 610px;
     background: #242628;
     text-align: center;
     overflow: hidden;
-    border-radius: 5px;    
-    padding: 0;
+    border-radius: 5px;   
+    padding: 0; 
 }
 .card__img{
     width: 120px;
