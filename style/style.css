@@ -148,8 +148,7 @@ hr{
 }
  
 /* contact */
-.card{    
-    position: relative;
+.card{        
     width: 100%;
     min-height: 610px;
     max-height: 610px;
@@ -158,6 +157,7 @@ hr{
     overflow: hidden;
     border-radius: 5px;   
     padding: 0; 
+    margin: 0 auto;    
 }
 .card__img{
     width: 120px;
